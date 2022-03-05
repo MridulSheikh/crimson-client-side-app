@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom';
 import AdminRoute from './component/Admin_route/Admin_route';
 import Private_route from './component/Private_Route/Private_route';
+import GetRatting from './component/profile/admin/GetRatting';
 import HotelBooking from './component/profile/HotelBooking';
 import Service from './component/service/Service';
 import Footer from './component/sheared/Footer';
@@ -40,6 +41,7 @@ function App() {
          <Route path="edate-profile" element={<Private_route><EdateProfile /></Private_route>} />
          <Route path="my-tour" element={<Private_route><MyTour /></Private_route>} />
          <Route path="ratting" element={<Private_route><Ratting /></Private_route>} />
+         <Route path="get-ratting" element={<AdminRoute><GetRatting /></AdminRoute>} />
       </Route>
       <Route path="*" element={<PageNotfound />} />
       </Routes>

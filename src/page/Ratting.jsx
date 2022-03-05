@@ -26,6 +26,11 @@ const Ratting = () => {
             <form onSubmit={handleSubmit(submit)} className='bg-white shadow-md border rounded-md w-5/12 mx-auto p-7 flex flex-col'>
             <h2 className='text-2xl text-gray-400 font-semibold'>give us Ratting</h2>
             <hr className='bg-green-500 h-1 my-5 rounded-full' />
+            <input 
+            type="hidden"
+            {...register("show")}
+            value="hidden"
+            />
             <label className='my-3'>
             <span>Name<sup>*</sup></span>
             <br />
