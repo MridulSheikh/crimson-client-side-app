@@ -67,7 +67,7 @@ const Registrition = () => {
              <p>Are you new here ? <span className='underline text-primary'><Link to="/login">login</Link></span></p>
              </div>
              <div>
-             <button onClick={handlegooglesingin} className='text-primary border-2 hover:bg-google hover:text-white transition w-full py-1 rounded-full my-5'>sing in with google</button>
+            { /*<button onClick={handlegooglesingin} className='text-primary border-2 hover:bg-google hover:text-white transition w-full py-1 rounded-full my-5'>sing in with google</button>*/}
              </div>
             </div>
             <div>

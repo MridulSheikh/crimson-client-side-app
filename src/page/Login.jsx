@@ -57,7 +57,7 @@ const Login = () => {
              <button onClick={()=>email_pass_login(email, password)} className='bg-primary text-white w-full py-1 rounded-full my-5'>login</button>
              <p>Are you new here ? <span className='underline text-primary'><Link to="/registration">sing up</Link></span></p>
              </div>
-             <button onClick={singinWithGoogle} className='text-primary border-2 hover:bg-google hover:text-white transition w-full py-1 rounded-full my-5'>sing in with google</button>
+            {/*<button onClick={singinWithGoogle} className='text-primary border-2 hover:bg-google hover:text-white transition w-full py-1 rounded-full my-5'>sing in with google</button>*/}
             </div>
             <div className='flex justify-between mx-5 md:mx-96 md:px-36 text-primary mt-20'>
             <Link to="/">home</Link>

@@ -1,9 +1,10 @@
 const firebaseConfig = {
-    apiKey: "AIzaSyANx76atSgYgBInPAd3OL1WKudPv44SviE",
-    authDomain: "crimson-travel.firebaseapp.com",
-    projectId: "crimson-travel",
-    storageBucket: "crimson-travel.appspot.com",
-    messagingSenderId: "39941548489",
-    appId: "1:39941548489:web:0dac90086d9b2aa3146018"
+  apiKey: "AIzaSyA3vZmJvw8MCSmro1Zti8-ge3blIo9HeY0",
+  authDomain: "crimson-lts.firebaseapp.com",
+  projectId: "crimson-lts",
+  storageBucket: "crimson-lts.appspot.com",
+  messagingSenderId: "912160362324",
+  appId: "1:912160362324:web:771cd33d10501a8dac42c1",
+  measurementId: "G-CTV235WT3H"
   };
 export default firebaseConfig;
