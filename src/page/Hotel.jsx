@@ -10,10 +10,10 @@ const Hotel = () => {
         setLoading(true)
         let url;
         if(value == "All"){
-             url = `http://localhost:5000/hotel`
+             url = `https://arcane-refuge-73765.herokuapp.com/hotel`
           }
           else{
-             url = `http://localhost:5000/hotel/${value}`
+             url = `https://arcane-refuge-73765.herokuapp.com/hotel/${value}`
           }
           console.log(url)
         fetch(url)
@@ -23,14 +23,14 @@ const Hotel = () => {
     },[value])
     const search = () =>{
         setLoading(true)
-         fetch(`http://localhost:5000/hotels/${text}`)
+         fetch(`https://arcane-refuge-73765.herokuapp.com/hotels/${text}`)
          .then(res => res.json())
          .then(data => setHotel(data))
          .finally(()=>setLoading(false))
     }
     const reset = () =>{
         setLoading(true)
-         fetch(`http://localhost:5000/hotel`)
+         fetch(`https://arcane-refuge-73765.herokuapp.com/hotel`)
          .then(res => res.json())
          .then(data => setHotel(data))
          .finally(()=>setLoading(false))

@@ -19,7 +19,7 @@ const HotelDetailCard = ({name, room, people, duration, service_free, price, _id
             setAlert("we need you number");
             return;
         }
-        axios.post('http://localhost:5000/order-hotel', {
+        axios.post('https://arcane-refuge-73765.herokuapp.com/order-hotel', {
             name,
             room,
             people,

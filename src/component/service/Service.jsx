@@ -8,7 +8,7 @@ const Service = () => {
     const [loading, setLoading] = useState(false)
     useEffect(()=>{
         setLoading(true)
-        fetch('http://localhost:5000/service')
+        fetch('https://arcane-refuge-73765.herokuapp.com/service')
         .then(res => res.json())
         .then(data => {
             console.log(data)
@@ -24,7 +24,7 @@ const Service = () => {
              return;
          }
          setLoading(true)
-         const url = `http://localhost:5000/service/${searchText}`;
+         const url = `https://arcane-refuge-73765.herokuapp.com/service/${searchText}`;
          console.log(url)
          fetch(url)
          .then(res => res.json())
@@ -36,7 +36,7 @@ const Service = () => {
     }
     const reset = () =>{
         setResetLoading(true)
-        fetch('http://localhost:5000/service')
+        fetch('https://arcane-refuge-73765.herokuapp.com/service')
         .then(res => res.json())
         .then(data => {setService(data) })
         .finally(()=> setResetLoading(false));

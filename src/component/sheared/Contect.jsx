@@ -11,7 +11,7 @@ const Contect = () => {
         setAlert('')
         e.preventDefault();
         setAlert('sending......')
-        axios.post('http://localhost:5000/contect',{
+        axios.post('https://arcane-refuge-73765.herokuapp.com/contect',{
            subject,
            massage,
            email : user.email

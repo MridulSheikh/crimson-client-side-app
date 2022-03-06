@@ -8,7 +8,7 @@ const GetRatting = () => {
 
     const reset =()=>{
         setLoading(true)
-        axios.get('http://localhost:5000/ratting')
+        axios.get('https://arcane-refuge-73765.herokuapp.com/ratting')
         .then(res => {
             setRatting(res.data)
         })
@@ -17,7 +17,7 @@ const GetRatting = () => {
     
     useEffect(()=>{
         setLoading(true)
-        axios.get('http://localhost:5000/ratting')
+        axios.get('https://arcane-refuge-73765.herokuapp.com/ratting')
         .then(res => {
             setRatting(res.data)
         })

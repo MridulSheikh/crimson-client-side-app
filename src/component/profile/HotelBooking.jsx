@@ -11,7 +11,7 @@ const HotelBooking = () => {
     console.log(user.email)
     useEffect(()=>{
         setPageloading(true)
-        axios.get(`http://localhost:5000/order-hotel/${user.email}`)
+        axios.get(`https://arcane-refuge-73765.herokuapp.com/order-hotel/${user.email}`)
         .then(res => {
             setOrder(res.data)
         })
@@ -19,7 +19,7 @@ const HotelBooking = () => {
     },[])
     const deleteMethode = id =>{
         setLoading(true)
-       fetch(`http://localhost:5000/order-hotel/${id}`,{
+       fetch(`https://arcane-refuge-73765.herokuapp.com/order-hotel/${id}`,{
         method: "DELETE"
     })
     .then(res => res.json())

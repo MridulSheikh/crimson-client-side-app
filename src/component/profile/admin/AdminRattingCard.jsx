@@ -8,7 +8,7 @@ const AdminRattingCard = ({name, _id, email, ratting, about, show, reset}) => {
     const [isloading, setIsloading] = useState(false)
     const submit = data => {
         setIsloading(true)
-        axios.put('http://localhost:5000/ratting', data)
+        axios.put('https://arcane-refuge-73765.herokuapp.com/ratting', data)
         .then(res =>{
             if(res.data.acknowledged){
                 reset()

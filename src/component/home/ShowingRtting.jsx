@@ -7,7 +7,7 @@ import "react-multi-carousel/lib/styles.css";
 const ShowingRtting = () => {
     const [ratting, setRatting] = useState([]);
     useEffect(()=>{ 
-        axios.get("http://localhost:5000/ratting/showing")
+        axios.get("https://arcane-refuge-73765.herokuapp.com/ratting/showing")
         .then(res =>{
             setRatting(res.data)
         })

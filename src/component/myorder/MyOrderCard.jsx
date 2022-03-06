@@ -6,7 +6,7 @@ const MyOrderCard = ({_id}) => {
     console.log(_id)
     const [order, setOrder] = useState([]);
     useEffect(()=>{
-     axios.get(`http://localhost:5000/service-by-id/${_id}`)
+     axios.get(`https://arcane-refuge-73765.herokuapp.com/service-by-id/${_id}`)
      .then(res => {
          setOrder(res.data)
      })

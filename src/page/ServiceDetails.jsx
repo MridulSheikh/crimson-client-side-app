@@ -16,7 +16,7 @@ const ServiceDetails = () => {
     const Rederect_uri = "/service";
     const navigate = useNavigate()
     useEffect(()=>{
-      axios.get(`http://localhost:5000/service/${name}`)
+      axios.get(`https://arcane-refuge-73765.herokuapp.com/service/${name}`)
       .then(res => {
       console.log(res); 
       setData(res.data)
@@ -31,7 +31,7 @@ const ServiceDetails = () => {
     },[])
     const submit = e =>{
         setLoading("Loading......")
-        axios.post('http://localhost:5000/order', {
+        axios.post('https://arcane-refuge-73765.herokuapp.com/order', {
             age,
             Name : uname,
             adress,

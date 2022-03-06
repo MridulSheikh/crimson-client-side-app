@@ -10,7 +10,7 @@ const HotelDetails = () => {
     const Rederect_uri = '/';
 
     useEffect(()=>{
-        axios.get(`http://localhost:5000/hotel-by-id/${id}`)
+        axios.get(`https://arcane-refuge-73765.herokuapp.com/hotel-by-id/${id}`)
         .then(res => {
             console.log(res.data)
             if(res.data === ""){

@@ -8,7 +8,7 @@ const Ratting = () => {
     const {user} = useAuth();
     const submit = data =>{
         setLoading(true);
-        axios.post('http://localhost:5000/ratting', data)
+        axios.post('https://arcane-refuge-73765.herokuapp.com/ratting', data)
         .then(res => {
            if(res.data.insertedId){
                alert('thank you for your submition')

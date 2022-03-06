@@ -9,7 +9,7 @@ const MyTour = () => {
     const {user} = useAuth();
     useEffect(()=>{
         setIsloading(true)
-        axios.get(`http://localhost:5000/order/${user.email}`)
+        axios.get(`https://arcane-refuge-73765.herokuapp.com/order/${user.email}`)
         .then(res => {
            setOrder(res.data)
         })

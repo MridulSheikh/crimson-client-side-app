@@ -67,7 +67,7 @@ const useFirebase = () => {
         },[])
         //set admin data 
      useEffect(()=>{
-      fetch(`http://localhost:5000/user/${user.email}`)
+      fetch(`https://arcane-refuge-73765.herokuapp.com/user/${user.email}`)
       .then(res => res.json())
       .then(data => setAdmin(data.role))
     },[user.email])
@@ -78,7 +78,7 @@ const useFirebase = () => {
                displayName,
                admin : false
            }
-        axios.post('http://localhost:5000/user', data)
+        axios.post('https://arcane-refuge-73765.herokuapp.com/user', data)
           .then(function (response) {
             console.log(response);
           })
@@ -88,7 +88,7 @@ const useFirebase = () => {
        }
        const saveUser = (email, displayName) =>{
         const user = {email, displayName}
-        fetch('http://localhost:5000/user',{
+        fetch('https://arcane-refuge-73765.herokuapp.com/user',{
           method: "PUT", 
           headers: {
             'content-type' : 'application/json'
