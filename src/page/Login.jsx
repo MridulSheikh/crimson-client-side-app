@@ -15,6 +15,7 @@ const Login = () => {
         handlegooglesingin()
         .then(result => {
             const user = result.user
+            setUser=(user)
             saveUser(user.email, user.displayName)
             navigate(redirect_uri)
         })

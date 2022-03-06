@@ -66,10 +66,12 @@ const useFirebase = () => {
             })
         },[])
         //set admin data 
-     useEffect(()=>{
-      fetch(`https://arcane-refuge-73765.herokuapp.com/user/${user.email}`)
-      .then(res => res.json())
-      .then(data => setAdmin(data.role))
+      useEffect(()=>{
+      axios.get(`https://arcane-refuge-73765.herokuapp.com/user/${user.email}`)
+      .then(res => {
+          const data = res.data;
+          setAdmin(data.role)
+      })
     },[user.email])
        // save user
        const savedUser = (email, displayName) =>{
