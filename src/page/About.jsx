@@ -5,10 +5,9 @@ import Contect from '../component/sheared/Contect';
 
 const About = () => {
     return (
-        <div>
+        <div className='pb-10'>
             <About_top_page />
             <About_Photo_collage />
-            <Contect />
         </div>
     );
 };

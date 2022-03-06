@@ -28,15 +28,16 @@ const HotelDetailCard = ({name, room, people, duration, service_free, price, _id
             final_price,
             number,
             email : user.email,
-            _id
+            hotel_id : _id
           })
           .then(function (response) {
             if(response.data.acknowledged){
                 setAlert("booking successfully !")
             }
           })
-          .catch(function (error) {
-            setAlert(error.massage);
+          .catch(error =>{
+              console.log(error)
+              setAlert("booking not successfully")
           })
     }
     return (

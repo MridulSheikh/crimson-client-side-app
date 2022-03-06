@@ -58,6 +58,7 @@ const HotelBooking = () => {
                 order?.map(order => <HotelBookingCard 
                     key ={order._id}
                     id ={order._id}
+                    hotel_id = {order.hotel_id}
                     name ={order.name}
                     room ={order.room}
                     people ={order.people}

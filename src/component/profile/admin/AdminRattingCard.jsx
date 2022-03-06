@@ -27,7 +27,7 @@ const AdminRattingCard = ({name, _id, email, ratting, about, show, reset}) => {
         </div>
         {
             clicked &&
-            <div>
+            <div className='mx-3'>
             <hr className='h-1 bg-green-500 my-5 rounded-full' />
             <p className='text-sm text-gray-700 mb-10'>{about}</p>
             <form onSubmit={handleSubmit(submit)}>
